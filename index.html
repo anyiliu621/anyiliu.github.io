@@ -4,55 +4,16 @@
 <head>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav {
-      background-color: #333;
-      color: white;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-right: 15px;
+      background-color: pink;
+      background-image: radial-gradient(yellow 5px, transparent 5px);
+      background-size: 20px 20px;
     }
   </style>
 </head>
 
 <body>
-  <nav>
-    < a href=" ">关于我</ a>
-    < a href="personal.html">个人</ a>
-  </nav>
+<h1>welcom to my world</h1>
 
-  <!00后>
-  <div id="home-page">
-    <h1>欢迎来认识我</h1>
-    <p>这是关于我。</p >
-  </div>
-
-  <!-- 个人页面内容 -->
-  <div id="personal-page" style="display:none;">
-    <h1>联系我</h1>
-    <p>邮箱：anyiliu@ln.hk</p >
-  </div>
-
-  <script>
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', function(event) {
-        event.preventDefault();
-        const targetPage = this.getAttribute('href');
-        document.querySelectorAll('div[id^="page"]').forEach(page => {
-          page.style.display = 'none';
-        });
-        document.getElementById(targetPage.replace('.html', '-page')).style.display = 'block';
-      });
-    });
-  </script>
 </body>
 
 </html>
